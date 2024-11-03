@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="owl-carousel">
+    <div class="slide1 slide-image">
+        <div class="product-infor animation1">
+            <h2 class="product-infor__mode">PRE-ORDER NOW</h2>
+            <h2 class="product-infor__desc">A DELICIOUS FOOD</h2>
+            <button class="product-infor__btn">
+                <a class="product-infor__btn-link" href="#">Find out more</a>
+                <i class="fa-solid fa-angle-right btn-icon"></i>
+            </button>
+        </div>
+    </div>
+    <div class="slide2 slide-image">
+        <div class="product-infor animation2">
+            <h2 class="product-infor__mode">AVAILABLE NOW</h2>
+            <h2 class="product-infor__desc">CHRISMAS ICE CREAM CAKES</h2>
+            <button class="product-infor__btn">
+                <a class="product-infor__btn-link" href="">Find out more</a>
+                <i class="fa-solid fa-angle-right btn-icon"></i>
+            </button>
+        </div>
+    </div>
+    <div class="slide3 slide-image">
+        <div class="product-infor animation3">
+            <h2 class="product-infor__mode">INTRODUCING THE NEW</h2>
+            <h2 class="product-infor__desc">ULTRA BURGER SERIES</h2>
+            <button class="product-infor__btn">
+                <a class="product-infor__btn-link" href="">Find out more</a>
+                <i class="fa-solid fa-angle-right btn-icon"></i>
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<script src="~/Content/asset/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+<script src="~/Content/asset/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+    });
+
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+
+</script>
+<script src="~/Content/asset/main.js"></script>

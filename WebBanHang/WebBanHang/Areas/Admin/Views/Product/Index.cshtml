@@ -1,0 +1,175 @@
+﻿@model IEnumerable<WebBanHang.Models.SAN_PHAM>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<aside class="app-sidebar">
+    <div class="app-sidebar__user">
+        <img class="app-sidebar__user-avatar" src="~/Content/asset/image/anhcv1.jpg" width="50px"
+             alt="User Image">
+        <div>
+            <p class="app-sidebar__user-name"><b>Trường Anh</b></p>
+            <p class="app-sidebar__user-designation">Chào mừng bạn trở lại</p>
+        </div>
+    </div>
+    <hr>
+    <ul class="app-menu">
+        <li>
+            <a class="app-menu__item primary" href="phan-mem-ban-hang.html">
+                <i class='app-menu__icon fa-solid fa-cart-shopping'></i>
+                <span class="app-menu__label">Bán Hàng</span>
+            </a>
+        </li>
+        <li>
+            <a class="app-menu__item active" href="#">
+                <i class="app-menu__icon fa-solid fa-tag"></i><span class="app-menu__label">Quản lý sản phẩm</span>
+            </a>
+        </li>
+        <li>
+            <a class="app-menu__item" href="@Url.Action("Index", "Customer", new { area = "Admin" })">
+                <i class='app-menu__icon fa-solid fa-user-pen'></i><span class="app-menu__label">Quản lý khách hàng</span>
+            </a>
+        </li>
+        <li>
+            <a class="app-menu__item" href="@Url.Action("Index", "Categories", new { area = "Admin" })">
+                <i class="app-menu__icon fa-solid fa-paperclip"></i><span class="app-menu__label">Quản lý danh mục</span>
+            </a>
+        </li>
+        <li>
+            <a class="app-menu__item" href="#">
+                <i class="app-menu__icon fa-solid fa-clipboard"></i><span class="app-menu__label">Quản lý đơn hàng</span>
+            </a>
+        </li>
+    </ul>
+</aside>
+<main class="app-content">
+    <div class="app-title">
+        <ul class="app-breadcrumb breadcrumb side">
+            <li class="breadcrumb-item"><a href="#"><b>Danh sách sản phẩm</b></a></li>
+        </ul>
+        <div id="clock"></div>
+    </div>
+
+    <div class="tile">
+        <div class="tile-body">
+            <div class="element-button">
+                <div class="button-action">
+
+                    <a class="btn btn-add btn-sm" href="@Url.Action("create", "Product", new { area = "Admin" })" title="Thêm">
+                        <i class="fas fa-plus"></i>
+                        Tạo mới sản phẩm
+                    </a>
+                </div>
+                <div class="button-action">
+                    <a class="btn btn-delete btn-sm nhap-tu-file" type="button" title="Nhập" onclick="myFunction(this)">
+                        <i class="fas fa-file-upload"></i> Tải từ file
+                    </a>
+                </div>
+
+                <div class="button-action">
+                    <a class="btn btn-delete btn-sm print-file" type="button" title="In" onclick="myApp.printTable()">
+                        <i class="fas fa-print"></i> In dữ liệu
+                    </a>
+                </div>
+                <div class="button-action">
+                    <a class="btn btn-delete btn-sm print-file js-textareacopybtn" type="button" title="Sao chép">
+                        <i class="fas fa-copy"></i> Sao chép
+                    </a>
+                </div>
+
+                <div class="button-action">
+                    <a class="btn btn-excel btn-sm" href="" title="In"><i class="fas fa-file-excel"></i> Xuất Excel</a>
+                </div>
+                <div class="button-action">
+                    <a class="btn btn-delete btn-sm pdf-file" type="button" title="In" onclick="myFunction(this)">
+                        <i class="fas fa-file-pdf"></i> Xuất PDF
+                    </a>
+                </div>
+                <div class="button-action">
+                    <a class="btn btn-delete btn-sm" type="button" title="Xóa" onclick="myFunction(this)">
+                        <i class="fas fa-trash-alt"></i> Xóa tất cả
+                    </a>
+                </div>
+            </div>
+            <div class="extension">
+                <div class="extension-show-wrap">
+                    <div class="extension-show">
+                        <label>
+                            Hiện
+                            <select class="show-option">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                            danh mục
+                        </label>
+                    </div>
+                </div>
+                <div class="extention-search-wrap">
+                    <div class="extention-search">
+                        <label>
+                            Tìm kiếm:
+                            <input type="search" class="input-search" placeholder="">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>Mã sản phẩm</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Ảnh</th>
+                        <th>Mô tả</th>
+                        <th>Tình trạng</th>
+                        <th>Giá tiền</th>
+                        <th>Loại</th>
+                        <th>Chức năng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MA_SP)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TEN_SP)
+                            </td>
+                            <td>
+                                <img src="@Url.Content(item.HINH_ANH)" alt="Product Image" style="width: 100px; height: auto;" /> <!-- Product Image -->
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MO_TA)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TRANG_THAI)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.GIA)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LOAI_SAN_PHAM.TEN_LOAI)
+                            </td>
+                            <td>
+                                <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp" data-id="@item.MA_SP"
+                                        onclick="window.location.href='@Url.Action("Edit", "Product", new { id = item.MA_SP })'">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+
+                                <button class="btn btn-danger btn-sm delete" type="button" title="Xóa" data-id-delete="@item.MA_SP"
+                                        onclick="if(confirm('Bạn có chắc chắn muốn xóa không?')) { window.location.href='@Url.Action("Delete", "Product", new { id = item.MA_SP })'; }">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+</main>

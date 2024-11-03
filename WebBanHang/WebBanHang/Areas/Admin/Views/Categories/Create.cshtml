@@ -1,0 +1,56 @@
+﻿@model WebBanHang.Models.LOAI_SAN_PHAM
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutCreate.cshtml";
+}
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "form", enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container my-5">
+        <div class="card shadow border-0" style="border-radius: 15px;">
+            <div class="card-header text-center text-white" style="background-color: rgb(0, 28, 64); border-radius: 15px 15px 0 0;">
+                <h3 class="mb-0">Add New Product Type</h3>
+            </div>
+            <div class="card-body p-5" style="background-color: #f9f9f9; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+
+                @Html.ValidationSummary(true, "", new { @class = "alert alert-danger rounded-3 shadow-sm mb-4" })
+
+                <div class="row gy-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.MA_LSP, "Mã loại sản phẩm", htmlAttributes: new { @class = "form-label fw-bold", style = "color: rgb(0, 28, 64);" })
+                            @Html.EditorFor(model => model.MA_LSP, new { htmlAttributes = new { @class = "form-control rounded-3 shadow-sm border-0" } })
+                            @Html.ValidationMessageFor(model => model.MA_LSP, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.TEN_LOAI, "Tên loại", htmlAttributes: new { @class = "form-label fw-bold", style = "color: rgb(0, 28, 64);" })
+                            @Html.EditorFor(model => model.TEN_LOAI, new { htmlAttributes = new { @class = "form-control rounded-3 shadow-sm border-0" } })
+                            @Html.ValidationMessageFor(model => model.TEN_LOAI, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.TRANG_THAI, "Trạng thái", htmlAttributes: new { @class = "form-label fw-bold", style = "color: rgb(0, 28, 64);" })
+                            <select id="TRANG_THAI" name="TRANG_THAI" class="form-select rounded-3 shadow-sm border-0">
+                                <option value="true">Còn hàng</option>
+                                <option value="false">Hết hàng</option>
+                            </select>
+                            @Html.ValidationMessageFor(model => model.TRANG_THAI, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <input type="submit" value="Create" class="btn btn-primary btn-lg rounded-pill px-4 py-2 shadow-sm" style="background-color: rgb(0, 28, 64); border: none; font-weight: bold;" />
+                    @Html.ActionLink("Back to Product Type List", "Index", null, new { @class = "btn btn-outline-primary btn-lg rounded-pill px-4 py-2 shadow-sm ms-3", style = "color: rgb(0, 28, 64); border-color: rgb(0, 28, 64); font-weight: bold;" })
+                </div>
+
+            </div>
+        </div>
+    </div>
+}
+

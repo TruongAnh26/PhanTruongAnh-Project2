@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FantaFood</title>
+    <link rel="stylesheet" href="~/Content/asset/main.css">
+    <link rel="stylesheet" href="~/Content/asset/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/asset/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://kit.fontawesome.com/502650a7cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="page-container">
+        <header class="app-header">
+            <!-- Navbar Right Menu-->
+            <ul class="app-nav">
+                <!-- User Menu-->
+                <li>
+                    <a class="app-nav__item" href="../index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+
+                </li>
+            </ul>
+        </header>
+        @RenderBody()
+
+    </div>
+
+    @*<div class="modal-add-product">
+            <div class="modal-add-product-container-wrap">
+                <div class="modal-add-product-container">
+
+                    <h3 class="modal-add-product-title">Tạo mới sản phẩm</h3>
+                    <i class="fa-solid fa-xmark close-icon-add close-icon"></i>
+
+                    <form action="./add-process.php" method="post" enctype="multipart/form-data">
+                        <div class="form-group-add">
+                            <label for="product-add__identity" class="control-label">Mã sản phẩm</label>
+                            <input class="control-input" type="number" name="masp" id="masp">
+                        </div>
+                        <div class="form-group-add">
+                            <label for="product-add__name" class="control-label">Tên sản phẩm</label>
+                            <input class="control-input" type="text" name="product-add__name" id="product-add__name">
+                        </div>
+                        <div class="form-group-add">
+                            <label for="product-add__desc" class="control-label">Mô tả</label>
+                            <textarea class="control-input" name="product-add__desc" id="product-add__desc" cols="20" rows="4"></textarea>
+                        </div>
+                        <div class="form-group-add">
+                            <label for="product-add__price" class="control-label">Giá</label>
+                            <input class="control-input" type="number" name="product-add__price" id="product-add__price">
+                        </div>
+                        <div class="form-group-add">
+                            <label for="product-add__category" class="control-label">Loại sản phẩm</label>
+                            <select class="control-input" name="product-add__category" id="product-add__category">
+
+                            </select>
+                        </div>
+                        <div class="form-group-add">
+                            <img src="" alt="" id="product-add__image">
+                            <label class="control-label file-upload">
+                                <input type="file" name="file-image" onchange="previewImage(event)" />
+                                Hình ảnh <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            </label>
+                        </div>
+                        <div class="form-group-add">
+                            <label for="product-add__state" class="control-label">Trạng thái</label>
+                            <select class="control-input" name="product-add__state" id="product-add__state">
+                                <option>Chọn tình trạng</option>
+                                <option value="1">Còn hàng</option>
+                                <option value="0">Hết hàng</option>
+                            </select>
+                        </div>
+                        <div class="product-add-btn">
+                            <input type="submit" value="Thêm" name="product-add" id="product-add">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    *@
+    <script>
+        time()
+        function time() {
+            var today = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Chủ Nhật";
+            weekday[1] = "Thứ Hai";
+            weekday[2] = "Thứ Ba";
+            weekday[3] = "Thứ Tư";
+            weekday[4] = "Thứ Năm";
+            weekday[5] = "Thứ Sáu";
+            weekday[6] = "Thứ Bảy";
+            var day = weekday[today.getDay()];
+            var dd = today.getDate();
+            var mm = today.getMonth() + 1;
+            var yyyy = today.getFullYear();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            nowTime = h + " giờ " + m + " phút " + s + " giây";
+            if (dd < 10) {
+                dd = '0' + dd
+            }
+            if (mm < 10) {
+                mm = '0' + mm
+            }
+            today = day + ', ' + dd + '/' + mm + '/' + yyyy;
+            tmp = '<span class="date"> ' + today + ' - ' + nowTime +
+                '</span>';
+            document.getElementById("clock").innerHTML = tmp;
+            clocktime = setTimeout(time, 1000);
+
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i;
+                }
+                return i;
+            }
+        }
+    </script>
+    <script src="~/Content/asset/main.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+</body>
+</html>
