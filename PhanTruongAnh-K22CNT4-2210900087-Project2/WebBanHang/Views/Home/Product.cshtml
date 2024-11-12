@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WebBanHang.Models.SAN_PHAM>
+<div class="collection">
+    <div class="sidebar-menu__wrap">
+        <aside class="sidebar-menu">
+            <ul class="sidebar-product">
+                <li class="product-item active"><a href="#">Tất cả</a></li>
+                <li class="product-item"><a href="#">Bánh kem</a></li>
+                <li class="product-item"><a href="#">Bánh mì</a></li>
+                <li class="product-item"><a href="#">Đồ uống</a></li>
+
+            </ul>
+        </aside>
+
+    </div>
+    <div class="menu-wrap">
+        <h3 class="menu-item-title">Tất cả</h3>
+        <div class="menu-container">
+            @foreach (var item in Model) { 
+            
+            <div class="menu-item" >
+                <div class="menu-item__image">
+                    <a href="#"><img style="width: 100%; height: 100%; object-fit: cover" src="@Url.Content(item.HINH_ANH)" alt=""></a>
+                </div>
+                <div class="menu-item__info">
+                    <h3>
+                        <a href="#">@item.TEN_SP</a>
+                    </h3>
+                    <div class="price-product">
+                        @item.GIA.Value.ToString("#,##0")đ
+                    </div>
+                </div>
+                <a href="/PTACart/AddToCart?id=@item.MA_SP&TenSanPham=@item.TEN_SP&HinhAnh=@item.HINH_ANH&SoLuongMua=1&DonGiaMua=@item.GIA" class="btn btn-primary">
+                    Mua
+                    <i class="fa-solid fa-dollar-sign" style="color: #ffffff;"></i>
+                </a>
+            </div>
+            }
+        </div>
+
+    </div>
+</div>

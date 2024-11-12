@@ -1,0 +1,138 @@
+﻿@model WebBanHang.Models.SAN_PHAM
+
+@{
+    ViewBag.Title = "Edit Product";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutCreate.cshtml";
+}
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "form", enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container my-5">
+        <div class="card shadow border-0" style="border-radius: 15px;">
+            <div class="card-header text-center text-white" style="background-color: rgb(0, 28, 64); border-radius: 15px 15px 0 0;">
+                <h3 class="mb-0">Edit Product</h3>
+            </div>
+            <div class="card-body p-5" style="background-color: #f9f9f9; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+
+                @Html.ValidationSummary(true, "", new { @class = "alert alert-danger rounded-3 shadow-sm mb-4" })
+                @Html.HiddenFor(model => model.MA_SP)
+
+                <div class="row gy-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.TEN_SP, "Tên sản phẩm", htmlAttributes: new { @class = "form-label fw-bold", style = "color: rgb(0, 28, 64);" })
+                            @Html.EditorFor(model => model.TEN_SP, new { htmlAttributes = new { @class = "form-control rounded-3 shadow-sm border-0" } })
+                            @Html.ValidationMessageFor(model => model.TEN_SP, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.MO_TA, "Mô tả", htmlAttributes: new { @class = "form-label fw-bold", style = "color: rgb(0, 28, 64);" })
+                            @Html.TextAreaFor(model => model.MO_TA, new { @class = "form-control rounded-3 shadow-sm border-0", rows = 4 })
+                            @Html.ValidationMessageFor(model => model.MO_TA, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.GIA, "Giá", htmlAttributes: new { @class = "form-label fw-bold", style = "color: rgb(0, 28, 64);" })
+                            <div class="input-group">
+                                @Html.EditorFor(model => model.GIA, new { htmlAttributes = new { @class = "form-control rounded-3 shadow-sm border-0" } })
+                            </div>
+                            @Html.ValidationMessageFor(model => model.GIA, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.MA_LSP, "Loại sản phẩm", htmlAttributes: new { @class = "form-label fw-bold", style = "color: rgb(0, 28, 64);" })
+                            @Html.DropDownList("MA_LSP", null, "Lựa chọn", new { @class = "form-select rounded-3 shadow-sm border-0" })
+                            @Html.ValidationMessageFor(model => model.MA_LSP, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.HINH_ANH, "Hình ảnh", htmlAttributes: new { @class = "form-label fw-bold", style = "color: rgb(0, 28, 64);" })
+                            <input type="file" class="form-control rounded-3 shadow-sm border-0" id="HINH_ANH" name="HINH_ANH" accept="image/*" onchange="previewImage(event)" />
+                            @Html.ValidationMessageFor(model => model.HINH_ANH, "", new { @class = "text-danger" })
+                            <div class="mt-3">
+                                @if (!string.IsNullOrEmpty(Model.HINH_ANH))
+                                {
+                                    <img id="productImagePreview" class="img-thumbnail shadow-sm border-0" src="@Url.Content(Model.HINH_ANH)" alt="Image Preview" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;" />
+                                }
+                                else
+                                {
+                                    <img id="productImagePreview" class="img-thumbnail shadow-sm border-0" src="@Url.Content("~/path/to/default-image.jpg")" alt="Image Preview" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;" />
+                                }
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.TRANG_THAI, "Trạng thái", htmlAttributes: new { @class = "form-label fw-bold", style = "color: rgb(0, 28, 64);" })
+                            @Html.DropDownListFor(model => model.TRANG_THAI, new List<SelectListItem> {
+                                new SelectListItem { Text = "Còn hàng", Value = "true" },
+                                new SelectListItem { Text = "Hết hàng", Value = "false" }
+                            }, "Chọn trạng thái", new { @class = "form-select rounded-3 shadow-sm border-0" })
+                            @Html.ValidationMessageFor(model => model.TRANG_THAI, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <input type="submit" value="Save Changes" class="btn btn-primary btn-lg rounded-pill px-4 py-2 shadow-sm" style="background-color: rgb(0, 28, 64); border: none; font-weight: bold;" />
+                    @Html.ActionLink("Back to Product List", "Index", null, new { @class = "btn btn-outline-primary btn-lg rounded-pill px-4 py-2 shadow-sm ms-3", style = "color: rgb(0, 28, 64); border-color: rgb(0, 28, 64); font-weight: bold;" })
+                </div>
+
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    function previewImage(event) {
+        const reader = new FileReader();
+        const imagePreview = document.getElementById('productImagePreview');
+
+        reader.onload = function () {
+            imagePreview.src = reader.result;
+            imagePreview.style.display = 'block';
+        }
+
+        if (event.target.files[0]) {
+            reader.readAsDataURL(event.target.files[0]);
+        } else {
+            imagePreview.src = '@Url.Content(Model.HINH_ANH ?? "~/path/to/default-image.jpg")';
+            imagePreview.style.display = 'block';
+        }
+    }
+</script>
+
+<style>
+    body {
+        background-color: #f0f2f5;
+    }
+
+    .card {
+        border-radius: 20px;
+    }
+
+    .card-header h3 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .form-label {
+        font-size: 0.9rem;
+        color: rgb(0, 28, 64);
+    }
+
+    .form-control, .form-select, .input-group-text {
+        border-radius: 15px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-lg {
+        padding: 0.75rem 2.5rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+</style>

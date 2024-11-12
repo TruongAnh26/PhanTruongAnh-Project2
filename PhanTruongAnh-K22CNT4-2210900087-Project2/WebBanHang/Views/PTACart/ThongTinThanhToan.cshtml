@@ -1,0 +1,124 @@
+﻿@model IEnumerable<WebBanHang.Models.PTACartItem>
+
+@{
+    ViewBag.Title = "ThongTinThanhToan";
+    Layout = "/Views/Shared/_Layout.cshtml";
+    var dangNhap = Session["UserName"] as WebBanHang.Models.KHACH_HANG;
+    var maKhachHang = dangNhap != null ? dangNhap.MA_KH : 0 ;
+    var tenKhachHang = dangNhap != null ? dangNhap.HO_TEN : "";
+    var email = dangNhap != null ? dangNhap.EMAIL : "";
+    var dienThoai = dangNhap != null ? dangNhap.DIEN_THOAI : "";
+
+}
+
+@using (Html.BeginForm("ThanhToan", "PTACart", FormMethod.Post))
+{
+    <div class="container" style="margin-top: 110px;">
+        <div class="row">
+            <!-- Recipient Information -->
+            <div class="col-md-6">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header text-white" style="background-color: #708090 ">
+                        <h4 class="mb-0">Thông tin người nhận</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group mb-3">
+                            <label for="TenKhachHang">Họ tên người nhận</label>
+                            <input type="text" id="TenKhachHang" name="TenKhachHang" class="form-control" placeholder="Nhập họ tên người nhận" required
+                                   value="@tenKhachHang"/>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="Email">Email</label>
+                            <input type="email" id="Email" name="Email" class="form-control" placeholder="Nhập email" required
+                                   value="@email"/>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="DienThoai">Điện thoại</label>
+                            <input type="tel" id="DienThoai" name="DienThoai" class="form-control" placeholder="Nhập số điện thoại" required
+                                   value="@dienThoai"/>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="DiaChi">Địa chỉ</label>
+                            <textarea id="DiaChi" name="DiaChi" class="form-control" rows="2" placeholder="Nhập địa chỉ" required></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Invoice Information -->
+            <div class="col-md-6">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header text-white" style="background-color: #708090 ">
+                        <h4 class="mb-0">Thông tin hóa đơn</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group mb-3">
+                            <label for="MaHoaDon">Mã Hóa Đơn</label>
+                            <input type="text" id="MaHoaDon" name="MaHoaDon" class="form-control" readonly />
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="MaKhachHang">Mã Khách Hàng</label>
+                            <input type="text" id="MaKhachHang" name="MaKhachHang" class="form-control" readonly value="@maKhachHang"/>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="NgayHoaDon">Ngày Đặt</label>
+                            <input type="date" id="NgayHoaDon" name="NgayHoaDon" readonly class="form-control" value="@ViewBag.MaHoaDon" />
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="NgayNhan">Ngày Nhận</label>
+                            <input type="date" id="NgayNhan" name="NgayNhan" class="form-control" />
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="TongTriGia">Trị Giá Đơn</label>
+                            <input type="text" id="TongTriGia" name="TongTriGia" class="form-control" readonly value="@ViewBag.TongTriGia" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Details -->
+        <div class="card shadow-sm my-4">
+            <div class="card-header text-white" style="background-color: #708090 ">
+                <h4 class="mb-0">Chi tiết đơn hàng</h4>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-striped">
+                    <thead class="">
+                        <tr>
+                            <th>Mã sản phẩm</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Hình ảnh</th>
+                            <th>Số lượng</th>
+                            <th>Đơn giá</th>
+                            <th>Thành tiên</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.ID)</td>
+                                <td>@Html.DisplayFor(modelItem => item.TenSanPham)</td>
+                                <td>
+                                    <img src="@Url.Content(item.HinhAnh)" alt="" class="img-thumbnail" style="width: 50px; height: 50px; object-fit: cover" />
+                                </td>
+                                <td>@Html.DisplayFor(modelItem => item.SoLuongMua)</td>
+                                <td>@Html.DisplayFor(modelItem => item.DonGiaMua)</td>
+                                <td>@Html.DisplayFor(modelItem => item.ThanhTien)</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="card-footer text-end">
+                <h4 class="mb-0">Tổng trị giá: <span class="text-primary">@ViewBag.TongTriGia.ToString("#,##0")đ</span></h4>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-success btn-lg px-5">Thanh Toán</button>
+        </div>
+    </div>
+}

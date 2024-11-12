@@ -1,0 +1,74 @@
+﻿@{ 
+    var dangNhap = Session["UserName"] as WebBanHang.Models.KHACH_HANG;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FantaFood</title>
+    <link rel="stylesheet" href="~/Content/asset/main.css">
+    <link rel="stylesheet" href="~/Content/asset/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/asset/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://kit.fontawesome.com/502650a7cc.js" crossorigin="anonymous"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div id="page-container">
+        <header id="header">
+            <div class="logo-container">
+                <a href="/Home/Index" class="logo-link">
+                    <img src="~/Content/asset/image/logo.png" alt="logo" class="logo-img">
+                </a>
+            </div>
+            <div class="menu-nav" style="margin-right: 40px;">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="/Home/Index">Trang chủ</a></li>
+                    <li class="nav-item"><a href="/Home/About">Giới thiệu</a></li>
+                    <li class="nav-item"><a href="/Home/Product">Sản phẩm</a></li>
+                    <li class="nav-item"><a href="#">Tin tức</a></li>
+
+                    @if (Session["UserName"] != null)
+                    {
+                        <li class="nav-item">
+                            <a href="#" class="">Welcome @dangNhap.HO_TEN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Account/Logout" class="btn-logout">Đăng xuất</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item"><a href="/PTACart"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
+                        <li class="nav-item">
+                            <a href="/Account/Login" class="btn-sign-in">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Account/Login" class="btn-sign-in">Đăng Xuất</a>
+                        </li>
+                    }
+                </ul>
+            </div>
+           @* <div class="header-option">
+                @if (Session["UserName"] != null)
+                {
+                    <span class="user-name">Xin chào, @Session["UserName"]</span>
+                    <a href="/Account/Logout" class="btn-logout">Đăng xuất</a>
+                }
+                else
+                {
+                    <a href="/Account/Login" class="btn-sign-in">Đăng nhập</a>
+                }
+            </div>*@
+        </header>
+        @RenderBody()
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

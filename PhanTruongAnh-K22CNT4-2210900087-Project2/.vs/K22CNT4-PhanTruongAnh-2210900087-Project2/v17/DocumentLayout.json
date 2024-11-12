@@ -1,0 +1,394 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:2:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|c:\\work space\\aspnet ntu\\ttcd\\phantruonganh-k22cnt4-2210900087-project2\\webbanhang\\controllers\\ptacartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|solutionrelative:webbanhang\\controllers\\ptacartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\views\\ptacart\\thongtinthanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|solutionrelative:webbanhang\\views\\ptacart\\thongtinthanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|solutionrelative:webbanhang\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\WebBanHang.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\WebBanHang.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\controllers\\ptacartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\controllers\\ptacartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|solutionrelative:webbanhang\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|solutionrelative:webbanhang\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\3a32aba169c4584398db5b164abd756ea8aed6ff6eaa9f1af132256b76838bde\\PTACartController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\areas\\admin\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\areas\\admin\\views\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|solutionrelative:webbanhang\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\WebBanHang.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|solutionrelative:webbanhang\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\content\\asset\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|solutionrelative:webbanhang\\content\\asset\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\views\\home\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|solutionrelative:webbanhang\\views\\home\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\WebBanHang.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\views\\ptacart\\thongtinthanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\views\\ptacart\\thongtinthanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|solutionrelative:webbanhang\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\views\\ptacart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|solutionrelative:webbanhang\\views\\ptacart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\WebBanHang.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\views\\ptacart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\views\\ptacart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\bussiness\\pta_shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|solutionrelative:webbanhang\\bussiness\\pta_shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\WebBanHang.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\bussiness\\pta_shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\bussiness\\pta_shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\K22CNT4-PhanTruongAnh-2210900087-Project2.csproj|solutionrelative:webbanhang\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\WebBanHang.csproj|C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\webbanhang\\views\\ptacart\\camon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27CB547-3F4D-49CB-AE21-4EB1AE0CA539}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\views\\ptacart\\camon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 201,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebBanHang\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T15:56:37.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PTACartController.cs",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Controllers\\PTACartController.cs",
+              "RelativeDocumentMoniker": "WebBanHang\\Controllers\\PTACartController.cs",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Controllers\\PTACartController.cs",
+              "RelativeToolTip": "WebBanHang\\Controllers\\PTACartController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAAD0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T12:43:01.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "WebBanHang\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T15:12:45.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PTACartController.cs",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Controllers\\PTACartController.cs",
+              "RelativeDocumentMoniker": "WebBanHang\\Controllers\\PTACartController.cs",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Controllers\\PTACartController.cs",
+              "RelativeToolTip": "WebBanHang\\Controllers\\PTACartController.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAuwEwAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T14:38:59.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WebBanHang\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WebBanHang\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAD4vzQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T14:45:06.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ThongTinThanhToan.cshtml",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\PTACart\\ThongTinThanhToan.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\PTACart\\ThongTinThanhToan.cshtml",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\PTACart\\ThongTinThanhToan.cshtml",
+              "RelativeToolTip": "WebBanHang\\Views\\PTACart\\ThongTinThanhToan.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T13:00:43.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebBanHang\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T08:59:20.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Web.config",
+              "RelativeDocumentMoniker": "WebBanHang\\Web.config",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Web.config",
+              "RelativeToolTip": "WebBanHang\\Web.config",
+              "ViewState": "AQIAAA4AAAAAAAAAAADwvyEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-11T08:53:59.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PTACartController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\3a32aba169c4584398db5b164abd756ea8aed6ff6eaa9f1af132256b76838bde\\PTACartController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\3a32aba169c4584398db5b164abd756ea8aed6ff6eaa9f1af132256b76838bde\\PTACartController.cs",
+              "ToolTip": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\3a32aba169c4584398db5b164abd756ea8aed6ff6eaa9f1af132256b76838bde\\PTACartController.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\3a32aba169c4584398db5b164abd756ea8aed6ff6eaa9f1af132256b76838bde\\PTACartController.cs [Read Only]",
+              "ViewState": "AQIAADcAAAAAAAAAAAAuwEUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T16:37:16.453Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Areas\\Admin\\Views\\Customer\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Customer\\Index.cshtml",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Areas\\Admin\\Views\\Customer\\Index.cshtml",
+              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Customer\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T16:06:30.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Areas\\Admin\\Views\\Customer\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Customer\\Edit.cshtml",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Areas\\Admin\\Views\\Customer\\Edit.cshtml",
+              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Customer\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T16:06:32.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PTA_ShoppingCart.cs",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Bussiness\\PTA_ShoppingCart.cs",
+              "RelativeDocumentMoniker": "WebBanHang\\Bussiness\\PTA_ShoppingCart.cs",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Bussiness\\PTA_ShoppingCart.cs",
+              "RelativeToolTip": "WebBanHang\\Bussiness\\PTA_ShoppingCart.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAADgvzMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T08:59:20.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Web.config",
+              "RelativeDocumentMoniker": "WebBanHang\\Web.config",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Web.config",
+              "RelativeToolTip": "WebBanHang\\Web.config",
+              "ViewState": "AQIAAA4AAAAAAAAAAADwvyEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-11T09:24:45.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T15:41:09.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "main.css",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Content\\asset\\main.css",
+              "RelativeDocumentMoniker": "WebBanHang\\Content\\asset\\main.css",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Content\\asset\\main.css",
+              "RelativeToolTip": "WebBanHang\\Content\\asset\\main.css",
+              "ViewState": "AQIAANQCAAAAAAAAAAAkwOUCAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-11T12:11:57.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "WebBanHang\\App_Start\\BundleConfig.cs",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "WebBanHang\\App_Start\\BundleConfig.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T09:05:54.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Product.cshtml",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\Home\\Product.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\Home\\Product.cshtml",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\Home\\Product.cshtml",
+              "RelativeToolTip": "WebBanHang\\Views\\Home\\Product.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAIwBwAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T12:47:42.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PTA_ShoppingCart.cs",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Bussiness\\PTA_ShoppingCart.cs",
+              "RelativeDocumentMoniker": "WebBanHang\\Bussiness\\PTA_ShoppingCart.cs",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Bussiness\\PTA_ShoppingCart.cs",
+              "RelativeToolTip": "WebBanHang\\Bussiness\\PTA_ShoppingCart.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAADgvzMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T15:28:40.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ThongTinThanhToan.cshtml",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\PTACart\\ThongTinThanhToan.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\PTACart\\ThongTinThanhToan.cshtml",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\PTACart\\ThongTinThanhToan.cshtml",
+              "RelativeToolTip": "WebBanHang\\Views\\PTACart\\ThongTinThanhToan.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T13:47:26.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\PTACart\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\PTACart\\Index.cshtml",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\PTACart\\Index.cshtml",
+              "RelativeToolTip": "WebBanHang\\Views\\PTACart\\Index.cshtml",
+              "ViewState": "AQIAADIAAAAAAAAAAAAYwD8AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T12:30:58.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebBanHang\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T12:47:36.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\PTACart\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\PTACart\\Index.cshtml",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\PTACart\\Index.cshtml",
+              "RelativeToolTip": "WebBanHang\\Views\\PTACart\\Index.cshtml",
+              "ViewState": "AQIAADIAAAAAAAAAAAAYwD8AAAB0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T14:56:03.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CamOn.cshtml",
+              "DocumentMoniker": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\PTACart\\CamOn.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\PTACart\\CamOn.cshtml",
+              "ToolTip": "C:\\Work Space\\ASPNET NTU\\TTCD\\PhanTruongAnh-K22CNT4-2210900087-Project2\\WebBanHang\\Views\\PTACart\\CamOn.cshtml",
+              "RelativeToolTip": "WebBanHang\\Views\\PTACart\\CamOn.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-10T14:53:46.739Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+﻿@model WebBanHang.Models.QUAN_TRI
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>QUAN_TRI</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MAT_KHAU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MAT_KHAU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRANG_THAI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRANG_THAI)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TAI_KHOAN }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

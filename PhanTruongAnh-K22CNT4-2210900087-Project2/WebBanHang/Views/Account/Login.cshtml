@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card p-4 shadow" style="max-width: 400px; width: 100%;">
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <h2 class="text-center mb-4">Đăng Nhập</h2>
+            if (ViewBag.error != null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @ViewBag.error
+                </div>
+            }
+
+            <div class="mb-3">
+                <label for="taikhoan" class="form-label">Tài khoản</label>
+                <input type="text" id="taikhoan" name="taikhoan" class="form-control" placeholder="Nhập tài khoản của bạn" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Nhập mật khẩu của bạn" required>
+            </div>
+
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+                <label class="form-check-label" for="rememberMe">Nhớ tài khoản</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Đăng Nhập</button>
+
+            <div class="text-center mt-3">
+                <small>Bạn chưa có tài khoản? <a href="/Account/Register">Đăng ký</a></small>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,83 @@
+﻿@model IEnumerable<WebBanHang.Models.PTACartItem>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("UpdateFromCart", "PTACart"))
+{
+    <div class="container my-5" style="padding-top: 110px;">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="text-center mb-4 p-3 rounded shadow-sm" style="font-size: 1.75rem; font-weight: bold;">
+                    <i class="fas fa-shopping-cart me-2"></i> Giỏ hàng của bạn
+                </div>
+                <table class="table table-striped table-hover table-bordered">
+                    <thead class="table-primary">
+                        <tr class="text-center">
+                            <th>Mã sản phẩm</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Hình ảnh</th>
+                            <th>Số lượng</th>
+                            <th>Đơn giá</th>
+                            <th>Thành tiền</th>
+                            <th>Chức năng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <input type="hidden" name="ID" value="@item.ID" />
+                            <tr class="text-center align-middle">
+                                <td>@Html.DisplayFor(modelItem => item.ID)</td>
+                                <td>@Html.DisplayFor(modelItem => item.TenSanPham)</td>
+                                <td>
+                                    <img class="rounded" style="width: 60px; height: 60px; object-fit: cover;" src="@Url.Content(item.HinhAnh)" alt="">
+                                </td>
+                                <td>
+                                    <input type="number" name="SoLuongMua" id="SoLuongMua" value="@item.SoLuongMua" class="form-control text-center" style="width: 80px;" data-id="@item.ID" />
+                                </td>
+                                <td>@Html.DisplayFor(modelItem => item.DonGiaMua)</td>
+                                <td>@Html.DisplayFor(modelItem => item.ThanhTien)</td>
+                                <td>
+                                    <a href="/PTACart/UpdateItemCart?id=@item.ID&qty=@item.SoLuongMua" class="btn btn-outline-success btn-sm update">
+                                        <i class="fas fa-sync-alt"></i> Cập nhật
+                                    </a>
+                                    <a href="/PTACart/DeleteItemCart?id=@item.ID" class="btn btn-outline-danger btn-sm">
+                                        <i class="fas fa-trash-alt"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-between">
+                    <a href="/PTACart/ThongTinThanhToan" class="btn btn-success">
+                        <i class="fas fa-credit-card"></i> Thanh toán
+                    </a>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-sync-alt"></i> Cập nhật giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("input[type='number']").change(function () {
+                let id = $(this).data("id");
+                let qty = $(this).val();
+
+                // Update the 'Cập nhật' button link in the same row
+                let url = "/PTACart/UpdateItemCart?id=" + id + "&qty=" + qty;
+                $(this).closest("tr").find("a.update").attr('href', url);
+            });
+        });
+    </script>
+}
